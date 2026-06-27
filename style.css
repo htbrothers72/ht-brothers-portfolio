@@ -1,0 +1,741 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+    font-family:Arial, sans-serif;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:black;
+}
+
+.logo{
+    color:gold;
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.hero{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:60px;
+    color:gold;
+}
+
+.hero p{
+    font-size:22px;
+    margin-top:10px;
+}
+
+.btn{
+    margin-top:20px;
+    padding:12px 25px;
+    background:gold;
+    color:black;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+.services{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.services h2{
+    color:gold;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.service-box{
+    background:#1a1a1a;
+    padding:30px;
+    margin:20px auto;
+    max-width:600px;
+    border:1px solid gold;
+    border-radius:10px;
+}
+
+.service-box h3{
+    color:gold;
+    margin-bottom:10px;
+}
+.projects{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.projects h2{
+    color:gold;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.project-box{
+    background:#111;
+    border:1px solid gold;
+    border-radius:10px;
+    padding:30px;
+    margin:20px auto;
+    max-width:600px;
+}
+
+.project-box h3{
+    color:gold;
+    margin-bottom:10px;
+}
+.about{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.about h2{
+    color:gold;
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+.about p{
+    max-width:800px;
+    margin:15px auto;
+    font-size:20px;
+    line-height:1.8;
+    color:white;
+}
+.contact{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.contact h2{
+    color:gold;
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+.contact form{
+    max-width:600px;
+    margin:auto;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:1px solid gold;
+    background:#111;
+    color:white;
+    border-radius:8px;
+}
+
+.contact textarea{
+    height:150px;
+}
+
+.contact button{
+    background:gold;
+    color:black;
+    padding:15px 30px;
+    border:none;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+}
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+    color:gold;
+}
+.service-box:hover,
+.project-box:hover{
+    transform: translateY(-10px);
+    transition: 0.4s;
+    box-shadow: 0 0 20px gold;
+}
+
+nav ul li a:hover{
+    color: gold;
+    transition: 0.3s;
+}
+
+button:hover{
+    background:white;
+    color:black;
+    transition:0.3s;
+}
+.whatsapp-btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 25px;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:bold;
+}
+
+.whatsapp-btn:hover{
+    transform:scale(1.1);
+}
+/* Smooth Scroll */
+html{
+    scroll-behavior:smooth;
+}
+
+/* Hero Animation */
+.hero h1{
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        text-shadow:0 0 10px gold;
+    }
+    to{
+        text-shadow:0 0 25px gold;
+    }
+}
+
+/* Cards Animation */
+.service-box,
+.project-box{
+    transition:0.4s;
+}
+
+.service-box:hover,
+.project-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px gold;
+}
+
+/* Navbar */
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+/* Section Titles */
+.services h2,
+.projects h2,
+.about h2,
+.contact h2{
+    text-shadow:0 0 15px gold;
+}
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:80px 20px;
+    flex-wrap:wrap;
+}
+
+.stat-box{
+    background:#111;
+    border:1px solid gold;
+    padding:30px;
+    width:200px;
+    text-align:center;
+    border-radius:10px;
+}
+
+.stat-box h2{
+    color:gold;
+    font-size:40px;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.service-box:hover,
+.project-box:hover,
+.stat-box:hover{
+    transform:translateY(-10px);
+    transition:0.4s;
+    box-shadow:0 0 20px gold;
+}
+
+.btn:hover,
+.whatsapp-btn:hover,
+button:hover{
+    transform:scale(1.05);
+    transition:0.3s;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+footer{
+    margin-top:50px;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+.service-box:hover,
+.project-box:hover,
+.stat-box:hover{
+    transform:translateY(-10px);
+    transition:0.4s;
+    box-shadow:0 0 20px gold;
+}
+
+nav a.active,
+nav a:hover{
+    color:gold;
+}
+.about,
+.skills,
+.team,
+.testimonials{
+    padding:100px 10%;
+    text-align:center;
+}
+
+.about h2,
+.skills h2,
+.team h2,
+.testimonials h2{
+    color:gold;
+    font-size:55px;
+    margin-bottom:40px;
+}
+
+.about p{
+    color:white;
+    max-width:900px;
+    margin:20px auto;
+    line-height:1.8;
+    font-size:22px;
+}
+
+.skills{
+    max-width:900px;
+    margin:auto;
+}
+
+.skill{
+    margin:25px 0;
+    text-align:left;
+}
+
+.skill p{
+    color:white;
+    margin-bottom:10px;
+}
+
+.bar{
+    width:100%;
+    height:15px;
+    background:#222;
+    border-radius:50px;
+}
+
+.bar span{
+    display:block;
+    height:100%;
+    background:gold;
+    border-radius:50px;
+}
+
+.team-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.team-box{
+    background:#111;
+    border:1px solid gold;
+    width:280px;
+    padding:30px;
+    border-radius:15px;
+}
+
+.team-box h3{
+    color:gold;
+}
+
+.team-box p{
+    color:white;
+}
+
+.review-box{
+    background:#111;
+    border:1px solid gold;
+    max-width:700px;
+    margin:20px auto;
+    padding:25px;
+    border-radius:15px;
+    color:white;
+}
+
+footer{
+    background:#111;
+    text-align:center;
+    padding:30px;
+    color:gold;
+    margin-top:50px;
+}
+.gallery{
+    padding:100px 10%;
+    text-align:center;
+}
+
+.gallery h2{
+    color:gold;
+    margin-bottom:40px;
+}
+
+.gallery-container{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.gallery-container img{
+    width:300px;
+    height:200px;
+    object-fit:cover;
+    border:2px solid gold;
+    border-radius:10px;
+}
+.light{
+    background:white;
+    color:black;
+}
+
+.light .service-box,
+.light .project-box,
+.light .team-box,
+.light .review-box{
+    background:#f1f1f1;
+    color:black;
+}
+@media(max-width:768px){
+
+.hero h1{
+    font-size:45px;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.team-container,
+.gallery-container,
+.stats{
+    flex-direction:column;
+    align-items:center;
+}
+
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0a0a0a;
+    color:white;
+}
+
+/* HEADER */
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:rgba(0,0,0,0.95);
+    border-bottom:1px solid gold;
+}
+
+.logo{
+    color:gold;
+    font-size:32px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+/* HERO */
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:90px;
+    color:gold;
+    text-shadow:0 0 20px gold;
+}
+
+.hero p{
+    font-size:24px;
+    margin-top:15px;
+}
+
+.btn{
+    margin-top:25px;
+    padding:15px 35px;
+    background:gold;
+    color:black;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* SECTIONS */
+.services,
+.about,
+.skills,
+.projects,
+.team,
+.testimonials,
+.contact{
+    padding:100px 10%;
+    text-align:center;
+}
+
+.services h2,
+.about h2,
+.skills h2,
+.projects h2,
+.team h2,
+.testimonials h2,
+.contact h2{
+    color:gold;
+    font-size:50px;
+    margin-bottom:40px;
+}
+
+/* CARDS */
+.service-box,
+.project-box,
+.team-box,
+.review-box,
+.stat-box{
+    background:#111;
+    border:1px solid gold;
+    border-radius:15px;
+    padding:25px;
+    margin:20px auto;
+    max-width:700px;
+    transition:0.4s;
+}
+
+.service-box:hover,
+.project-box:hover,
+.team-box:hover,
+.review-box:hover,
+.stat-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px gold;
+}
+
+.service-box h3,
+.project-box h3,
+.team-box h3{
+    color:gold;
+    margin-bottom:10px;
+}
+
+/* ABOUT */
+.about p{
+    max-width:900px;
+    margin:15px auto;
+    line-height:1.8;
+    font-size:20px;
+}
+
+/* STATS */
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    padding:80px 20px;
+}
+
+.stat-box{
+    width:220px;
+}
+
+.stat-box h2{
+    color:gold;
+    font-size:40px;
+}
+
+/* SKILLS */
+.skill{
+    max-width:700px;
+    margin:20px auto;
+    text-align:left;
+}
+
+.skill p{
+    margin-bottom:10px;
+}
+
+.bar{
+    width:100%;
+    height:15px;
+    background:#222;
+    border-radius:50px;
+}
+
+.bar span{
+    display:block;
+    height:100%;
+    background:gold;
+    border-radius:50px;
+}
+
+/* TEAM */
+.team-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.team-box{
+    width:280px;
+}
+
+/* CONTACT */
+.contact form{
+    max-width:600px;
+    margin:auto;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:1px solid gold;
+    background:#111;
+    color:white;
+    border-radius:8px;
+}
+
+.contact textarea{
+    height:150px;
+}
+
+.contact button{
+    background:gold;
+    color:black;
+    padding:15px 30px;
+    border:none;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+    background:#111;
+    text-align:center;
+    padding:30px;
+    color:gold;
+}
+
+/* WHATSAPP */
+.whatsapp-btn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 20px;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:bold;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+.hero h1{
+    font-size:50px;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+header{
+    flex-direction:column;
+}
+
+}
